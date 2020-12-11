@@ -6,6 +6,7 @@ namespace classes
     public class BankAccount
     {
         private static int accountNumberSeed = 1234567890;
+        private List<Transaction> allTransactions = new List<Transaction>();
         public string Number { get; }
         public string Owner { get; set; }
         public decimal Balance
@@ -27,11 +28,13 @@ namespace classes
             this.Owner = name;
 
             MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
-            
+
             this.Number = accountNumberSeed.ToString();
             accountNumberSeed++;
         }
-        private List<Transaction> allTransactions = new List<Transaction>();
+
+
+
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
             if (amount <= 0)
@@ -54,6 +57,21 @@ namespace classes
             }
             var withdrawal = new Transaction(-amount, date, note);
             allTransactions.Add(withdrawal);
+        }
+
+        public string GetAccountHistory()
+        {
+            var report = new System.Text.StringBuilder();
+
+            decimal balance = 0;
+            report.AppendLine("Date\t\tAmount\tBalance\tNote");
+            foreach (var item in allTransactions)
+            {
+                balance += item.Amount;
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{balance}\t{item.Notes}");
+            }
+
+            return report.ToString();
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Automation\\classes\\classes.csproj": {}
+    "D:\\Automation\\classes\\classes\\classes.csproj": {}
   },
   "projects": {
-    "D:\\Automation\\classes\\classes.csproj": {
+    "D:\\Automation\\classes\\classes\\classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Automation\\classes\\classes.csproj",
+        "projectUniqueName": "D:\\Automation\\classes\\classes\\classes.csproj",
         "projectName": "classes",
-        "projectPath": "D:\\Automation\\classes\\classes.csproj",
+        "projectPath": "D:\\Automation\\classes\\classes\\classes.csproj",
         "packagesPath": "C:\\Users\\fateev\\.nuget\\packages\\",
-        "outputPath": "D:\\Automation\\classes\\obj\\",
+        "outputPath": "D:\\Automation\\classes\\classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fateev\\AppData\\Roaming\\NuGet\\NuGet.Config"

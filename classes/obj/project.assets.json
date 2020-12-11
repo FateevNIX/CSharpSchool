@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Automation\\classes\\classes.csproj",
+      "projectUniqueName": "D:\\Automation\\classes\\classes\\classes.csproj",
       "projectName": "classes",
-      "projectPath": "d:\\Automation\\classes\\classes.csproj",
+      "projectPath": "D:\\Automation\\classes\\classes\\classes.csproj",
       "packagesPath": "C:\\Users\\fateev\\.nuget\\packages\\",
-      "outputPath": "d:\\Automation\\classes\\obj\\",
+      "outputPath": "D:\\Automation\\classes\\classes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fateev\\AppData\\Roaming\\NuGet\\NuGet.Config"
